@@ -1,12 +1,12 @@
-# FIRST UNDERSTANDING OF THE ASSIGNMENT:
-
-# creating the vector
+# creating a vector
 assignment2 <- c(16, 18, 14, 22, 27, 19, 17, 17, 22, 20, 22)
 # creating the 'myMean' function
 myMean <- function(x) {
   return(sum(x)/length(x)) }
 # testing the 'myMean' function with the vector
 myMean(assignment2)
+
+###############################################################
 
 # creating another vector for further testing
 assignment1 <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
@@ -14,16 +14,6 @@ assignment1 <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
 myMean(assignment1)
 
 ###############################################################
-
-# SECOND UNDERSTANDING OF THE ASSIGNMENT:
-
-# creating the vector
-assignment2 <- c(16, 18, 14, 22, 27, 19, 17, 17, 22, 20, 22)
-# creating the 'myMean' function
-myMean <- function(x) {
-  return(sum(x)/length(x)) }
-# testing the 'myMean' function with the vector
-myMean(assignment2)
 
 # creating a new vector 
 someData <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
