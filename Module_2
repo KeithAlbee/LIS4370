@@ -9,17 +9,17 @@ myMean(assignment2)
 ###############################################################
 
 # creating another vector for further testing
-assignment1 <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
+someData <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
 # testing the 'myMean' function with the second vector
-myMean(assignment1)
+myMean(someData)
 
 ###############################################################
 
-# creating a new vector 
+# revisiting the 'someData' vector 
 someData <- c(19, 27, 53, 24, 45, 8, 12, 2, 65, 12, 15, 20)
 #creating a new function
 myCount <- function(x) {
   return(length(x))
 }
 # testing the new function 
-myCount(someData)
+myCount(furtherData)
