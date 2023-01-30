@@ -1,0 +1,11 @@
+# Several sets of data provided in vectors
+Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Bernie")
+ABC_poll_results <- c(4, 62, 51, 21, 2, 14, 15)
+CBS_poll_results <- c(12, 75, 43, 19, 1, 21, 19)
+
+# Creating the data frame using the two vectors with poll results 
+ABCvsCBS <- data.frame(ABC_poll_results, CBS_poll_results)
+# Creating the row names for our data frame using the vector with names
+rownames(ABCvsCBS) <- Name
+# Renaming the columns to be more presentable
+colnames(ABCvsCBS) <- c("ABC Poll Results", "CBS Poll Results")
