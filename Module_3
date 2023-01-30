@@ -9,3 +9,7 @@ ABCvsCBS <- data.frame(ABC_poll_results, CBS_poll_results)
 rownames(ABCvsCBS) <- Name
 # Renaming the columns to be more presentable
 colnames(ABCvsCBS) <- c("ABC Poll Results", "CBS Poll Results")
+
+# Finding the means
+colMeans(ABCvsCBS)
+rowMeans(ABCvsCBS)
