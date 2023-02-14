@@ -19,12 +19,12 @@ exDiag
 #####################################################
 
 # Question 3
-x <- c(3, 2, 2, 2)
-d <- c(3, 3, 3, 3)
-y <- c(3, 1, 1, 1)
+x <- c(3, 1, 1, 1, 1)
+y <- c(3, 2, 2, 2, 2)
+d <- c(3, 3, 3, 3, 3)
 # Re-create the provided matrix in Canvas
 # HINT: Use the diag() function to build it
 exDiag2 <- diag(d) 
-exDiag2[1,] <- y 
-exDiag2[,1] <- x
+exDiag2[1,] <- x
+exDiag2[,1] <- y
 exDiag2
