@@ -1,16 +1,16 @@
 library(plyr)
 
 # Step 1
-assignment_six <- read.table("Assignment 6 Dataset.txt", header = TRUE, sep = ",")
+assignment <- read.table("Assignment 6 Dataset.txt", header = TRUE, sep = ",")
 
 # Step 2
-StudentAverage = ddply(assignment_six,"Sex",transform,Grade.Average=mean(Grade))
+StudentAverage = ddply(assignment,"Sex",transform,Grade.Average=mean(Grade))
 
 # Step 3 
 write.table(StudentAverage, "Sorted_Average", sep=",")
 
 # Step 4 
-student_w_I <- subset(assignment_six, grepl("i", assignment_six$Name, ignore.case=T))
+student_w_I <- subset(assignment, grepl("i", assignment$Name, ignore.case=T))
 
 # Step 5 
 write.table(student_w_I, "DataSubset", sep = ",")
