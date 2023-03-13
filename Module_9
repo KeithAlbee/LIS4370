@@ -1,0 +1,30 @@
+# Libraries
+library(tidyverse)
+library(ggplot2)
+
+# Loading and cleaning data
+df <- read_csv("Perch.csv") #load in data
+df <- df[,-1:-2] #remove first and second column
+
+# First viz: base R
+x <- df$Length
+y <- df$Width
+plot(x, y, main = "Length and Width",
+     xlab = "Length", ylab = "Width",
+     pch = 16)
+abline(lm(y ~ x, data = df), col = "blue")
+
+# Second viz: ggplot2
+ggplot(df, aes(x = Weight, y = Length)) + 
+  geom_point(aes(size = Width, alpha = .8)) +
+  geom_smooth(method = "lm", se = FALSE)
+  
+
+# Third viz: ggplot2
+x1 <- ggplot(df, aes(x = Width, y = Weight)) +
+  geom_point() +
+  labs(title = "2d Density Estimates: Width and Weight")
+x1 + geom_density_2d()
+  
+  
+
