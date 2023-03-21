@@ -1,0 +1,26 @@
+# Hello, world!
+#
+# You can learn more about package authoring with RStudio at:
+#
+#   http://r-pkgs.had.co.nz/
+#
+# Some useful keyboard shortcuts for package authoring:
+#
+#   Install Package:           'Ctrl + Shift + B'
+#   Check Package:             'Ctrl + Shift + E'
+#   Test Package:              'Ctrl + Shift + T'
+
+Package: countWords
+Type: Package
+Title: Return the number of words from a provided dataframe.  
+Version: 0.0.1
+Author: Keith Albee
+Maintainer: Keith Albee <kalbee@usf.edu>
+Description: This package will include functions that allow users to find the 
+wordcount of dataframes. You can specify which word you want to be counted and
+the source content, and it will return a new dataframe with the word and the
+number of times it came up. You can also just provide a dataframe to get the
+total number of words provided. 
+Depends: R (>= 3.1.2)
+License: CC0
+LazyData: true
