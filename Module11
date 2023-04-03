@@ -1,0 +1,44 @@
+---
+title: "R Markdown Demo"
+output:
+  html_document:
+    df_print: paged
+date: "April 2nd, 2023"
+---
+
+# R Markdown
+
+## Headers 
+Headers can be added by using hashtags in your markdown file. One hashtag indicates a larger header, while two or three will be smaller as the number of hashtags increases. 
+
+*Note: You can only have up to three hashtags as there are only three types of headers* 
+
+## Chunks of Code
+You can add spaces for programming by using ``` followed by {r} and another pair of three so RStudio will know what to run while knitting to HTML. Here is an example: 
+
+```{r}
+myData <- mtcars
+head(myData)
+```
+As you can see, the result of the data will be shown below the chunk in the HTML file. 
+
+## Lists and Font
+Lists can be created in two ways: numbers or bullets. A numbered list can be created by typing a number followed by a period. To create subpoints below that, press enter and tab, then type a + sign before your text. The outcome will look like this: 
+
+1. Grocery List
+  + Milk
+  + Eggs
+  + Bread
+2. To-Do List
+  + Call doctor
+  + Schedule appointment 
+  + Pick-up prescription
+  
+  In order to *italicize* font, surround the chosen text with an asterisk on each side. Similarly, to make it **bold**, wrap it with two on each side. 
+
+
+******
+
+## Page Breaks 
+A page break can be added in one of two ways: a series of **three or more** asterisks or hyphens. 
+
